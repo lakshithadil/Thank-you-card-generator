@@ -1,1 +1,1 @@
-# Thank-you-card-generator
+# Thank you card generator
