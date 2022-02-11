@@ -1,10 +1,10 @@
 <?php
 	if(isset($_POST['sub']))
 	{
-				$font="Anklepants/anklepan.ttf";
+		$font="Anklepants/anklepan.ttf";
 		$font1="Arial/Arial.ttf";
-		$im=imagecreatefromjpeg("certificate.jpg");
-		// certificate modal templete
+		$im=imagecreatefromjpeg("card.jpg");
+		// card modal templete
 		$name="Dear  ".$_POST['name'].";";
 		$nameu=$_POST['name'];
 		// get the name from user
@@ -18,11 +18,11 @@
 		// imagefttext(image, size, angle, x, y, color, fontfile, text)
 		// ucwords convert the first letter to uppercase
 		imagefttext($im,50,0,360,1170,$textColor,$font,ucwords($name));
-		// add the msg bottom of the certificate
+		// add the msg bottom of the card
 		imagefttext($im,45,0,240,1900,$textColor,$font1,$msg);
 		imagejpeg($im,$output);//to save the image
-        //imagejpeg($im);
-		// download the certificate
+                
+		// download the card
 		
 		if (file_exists($output)) {
     header('Content-Description: File Transfer');
@@ -42,8 +42,8 @@ if(isset($_POST['view']))
 	{
 		$font="Anklepants/anklepan.ttf";
 		$font1="Arial/Arial.ttf";
-		$im=imagecreatefromjpeg("certificate.jpg");
-		// certificate modal templete
+		$im=imagecreatefromjpeg("card.jpg");
+		// card modal templete
 		$name="Dear  ".$_POST['name'].";";
 		// get the name from user
 		$nameu=$_POST['name'];
@@ -57,7 +57,7 @@ if(isset($_POST['view']))
 		// imagefttext(image, size, angle, x, y, color, fontfile, text)
 		// ucwords convert the first letter to uppercase
 		imagefttext($im,50,0,360,1170,$textColor,$font,ucwords($name));
-		// add the msg bottom of the certificate
+		// add the msg bottom of the card
 		imagefttext($im,45,0,240,1900,$textColor,$font1,$msg);
 		imagejpeg($im,$output);//to save the image
 
