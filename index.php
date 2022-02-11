@@ -137,6 +137,6 @@ if(isset($_POST['view']))
 		</div>
 	</div>
 </div>
-<div class="footer"><p style="color:white">"lakigreetings"<br> © 2020 All rights reserved | Concept redesigned by Lakshitha dilshan.</p></div>
+<div class="footer"><p style="color:white">"lakigreetings"<br> © 2022 All rights reserved | Concept redesigned by Lakshitha dilshan.</p></div>
 </body>
 </html>
