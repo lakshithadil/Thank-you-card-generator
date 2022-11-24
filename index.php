@@ -25,16 +25,16 @@
 		// download the card
 		
 		if (file_exists($output)) {
-    header('Content-Description: File Transfer');
-    header('Content-Type: application/octet-stream');
-    header('Content-Disposition: attachment; filename="'.basename($output).'"');
-    header('Expires: 0');
-    header('Cache-Control: must-revalidate');
-    header('Pragma: public');
-    header('Content-Length: ' . filesize($output));
-    readfile($output);
-    exit;
-      }
+                header('Content-Description: File Transfer');
+                header('Content-Type: application/octet-stream');
+                header('Content-Disposition: attachment; filename="'.basename($output).'"');
+                header('Expires: 0');
+                header('Cache-Control: must-revalidate');
+                header('Pragma: public');
+                header('Content-Length: ' . filesize($output));
+                readfile($output);
+                exit;
+                }
 	  
 	}
 
@@ -63,7 +63,7 @@ if(isset($_POST['view']))
 
 		header('content-type: image/jpeg');
 
-        imagejpeg($im);
+                imagejpeg($im);
 		
 	  
 	}
@@ -104,11 +104,6 @@ if(isset($_POST['view']))
     padding:1%;
 	text-align:center;
   }
-  
-  
-  
-  
-  
   </style>
 </head>
 <body>
